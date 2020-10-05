@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "indexLabel at dataSeries",
+        fontSize: 20
+      },
+      type: 'bar',
+      data: [
+       {        
+         //type: 'bar',
+         showInLegend: true,
+         legendText: "Gold",
+         color: "rgba(47, 82, 140, 0.992)",
+         labels: [{% for i in ha %} '{{i}}', {% endfor %}],
+         indexLabel: "{x}, {y}",
+         indexLabelPlacement: "outside",  
+         indexLabelOrientation: "horizontal",
+         dataPoints: [ {% for i in range(ha | count) %} { x: {{ha[i]}}, y: {{ga[0][i]}} }, {% endfor %} ]
+        },
+        {
+          labels: [{% for i in ha %} '{{i}}', {% endfor %}],
+          indexLabel: "{x}, {y}",
+          indexLabelPlacement: "outside",
+          indexLabelOrientation: "horizontal",
+          dataPoints: [{% for i in range(ha | count) %} { x: {{ha[i]}}, y: {{ga[1][i]}} }, {% endfor %} ]
+        }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;">
+  </div>
+</body>
+</html>

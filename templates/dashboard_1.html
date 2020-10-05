@@ -1,0 +1,965 @@
+﻿<!--
+=========================================================
+ Material Dashboard - v2.1.1
+=========================================================
+
+ Product Page: https://www.creative-tim.com/product/material-dashboard
+ Copyright 2019 Creative Tim (https://www.creative-tim.com)
+ Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
+
+ Coded by Creative Tim
+
+=========================================================
+
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<!-- <a href="dashboard.html">dashboard.html</a> -->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--link rel="apple-touch-icon" sizes="76x76" href="static/img/apple-icon.png"-->
+    <link rel="icon" type="image/png" href="static/img/logo kap.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        DASHBOARD
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="static/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="static/demo/demo.css" rel="stylesheet" />
+    <style type='text/css'>
+        .parallax-window {
+            min-height: 1100px;
+            background: transparent;
+            overflow-x: scroll;
+        }
+
+        .tm-bg-white-transparent {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .tm-brand-row {
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 28px;
+        }
+
+        .tm-brand-container {
+            max-width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tm-brand-icon {
+            width: 79px;
+            height: 77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333436;
+            color: white;
+            border-radius: 50%;
+            margin-right: 25px;
+        }
+
+        .tm-brand-name {
+            font-size: 2.3rem;
+            color: #333333;
+        }
+
+        .tm-call-to-action-col {
+            flex-direction: column;
+        }
+
+        #tmHome {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .tm-home-left {
+            max-width: 420px;
+            width: 100%;
+            margin-right: 185px;
+        }
+
+        .tm-home-container {
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tm-slogan {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        .tm-home-hr {
+            border-top-color: white;
+            margin-bottom: 30px;
+        }
+
+        .tm-home-title {
+            font-size: 1.6em;
+            margin-bottom: 40px;
+        }
+
+        .tm-home-text {
+            margin-bottom: 47px;
+        }
+
+        .tm-feature-box {
+            max-width: fit-content;
+            min-height: 480px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tm-bg-white-transparent {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .text-white {
+            color: #212529 !important;
+        }
+
+        #tmFeatures {
+            padding: 68px 150px 60px 150px;
+            max-width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tm-feature-box {
+            max-width: fit-content;
+            min-height: fit-content;
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tm-feature-name {
+            color: black;
+            margin-bottom: 50px;
+        }
+
+        .tm-feature-icon-container {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #3E3F40;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
+        /*Kelas abd*/
+        .aaa {
+            object-position: center;
+            padding: 0% 17% 10% 17%;
+            height: inherit;
+        }
+
+        /*111;110;199;0.5*/
+        .abd {
+            position: center;
+            box-sizing: border-box;
+            padding: 0;
+            border-style: none;
+        }
+        /*Tambah*/
+        .tmbl {
+            padding: 15px 100px;
+            margin: 10px 4px;
+            color: transparent;
+            font-family: sans-serif;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .tmbl {
+            top: 40px;
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: black;
+            cursor: hand;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden !important;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            background-color: transparent;
+            z-index: 10;
+            border-bottom-color: #30145d;
+        }
+
+
+            .tmbl:hover {
+                border: 1px solid;
+                border-bottom-color: #30415d;
+                color: #fff !important;
+            }
+
+            .tmbl::before {
+                content: '';
+                width: 0%;
+                height: 100%;
+                display: block;
+                background: #30415d;
+                position: absolute;
+                opacity: 1;
+                top: 0;
+                z-index: -12;
+                -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                box-shadow: 2px 0px 7px rgba(0,0,0,.6);
+            }
+
+            .tmbl::after {
+                content: '';
+                width: 0%;
+                height: 100%;
+                display: block;
+                background: #6098FF;
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                z-index: -15;
+                -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+                -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+                -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+                box-shadow: 2px 0px 7px rgba(0,0,0,.6);
+            }
+
+            .tmbl:hover::before, .tmbl:hover::before {
+                opacity: 2;
+                width: 500%;
+            }
+
+            .tmbl:hover::after, .tmbl:hover::after {
+                opacity: 2;
+                width: 450%;
+            }
+
+
+
+        /*Batas*/
+
+        bd {
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            font-family: sans-serif;
+            margin: 0;
+            background: #6D6027;
+            background: -webkit-linear-gradient(left, #D3CBB8, #6D6027);
+            background: -o-linear-gradient(left, #D3CBB8, #6D6027);
+            background: linear-gradient(to right, #D3CBB8, #6D6027);
+        }
+
+        @media (max-width: 767px) {
+            .bd {
+                display: block;
+            }
+        }
+
+        .crd {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 20px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            cursor: pointer;
+            height: 80px;
+            padding: 0 25px 0px 25px;
+            position: center;
+            -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+            text-align: center;
+            transition: height 1000ms;
+            width: 270px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .crd {
+                left: calc(50% - 20px);
+                transform: translateX(-50%);
+            }
+        }
+
+        .crd.expanded {
+            height: initial;
+        }
+
+        .label {
+            transform: translateY(10px);
+            transition: transform 1000ms;
+        }
+
+        .crd.expanded .label {
+            transform: translateY(0);
+        }
+
+        .text1 {
+            clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+            -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+            transition: clip-path 1000ms;
+        }
+
+        .crd.expanded .text1 {
+            clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+            -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+        }
+
+        .text2 {
+            clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+            -webkit-clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+            transition: clip-path 1000ms;
+        }
+
+        .crd.expanded .text2 {
+            clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+            -webkit-clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+        }
+
+        .text-content {
+            transform: translateY(-160px);
+            transition: transform 1000ms;
+        }
+
+        .crd.expanded .text-content {
+            transform: translateY(-15px);
+        }
+
+        .chevron {
+            position: absolute;
+            bottom: 20px;
+            left: calc(50% - 15px);
+            transform-origin: 50%;
+            transform: rotate(180deg);
+            transition: transform 1000ms;
+        }
+
+        .crd.expanded .chevron {
+            transform: rotate(0deg);
+        }
+
+        .bd-text {
+            padding: 10px 0px 25px 7px;
+            text-align: justify;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        .s01 {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            padding: 0px 0px 0px 120px;
+        }
+
+            .s01 form {
+                width: 90%;
+                max-width: 1000px;
+            }
+
+                .s01 form .inner-form {
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 10px 20px;
+                    display: -ms-flexbox;
+                    display: flex;
+                    width: 90%;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+
+                    .s01 form .inner-form .input-field {
+                        margin-right: 15px;
+                    }
+
+                        .s01 form .inner-form .input-field input {
+                            background: #fff;
+                            /*border-radius: .5px;*/
+                            border: 0;
+                            display: block;
+                            width: 100%;
+                            padding: 10px 20px;
+                            font-size: 20px;
+                        }
+
+                            .s01 form .inner-form .input-field input.placeholder {
+                                color: #9a9a9a;
+                                font-size: 20px;
+                            }
+
+                            .s01 form .inner-form .input-field input:-moz-placeholder {
+                                color: #9a9a9a;
+                                font-size: 20px;
+                            }
+
+                            .s01 form .inner-form .input-field input::-webkit-input-placeholder {
+                                color: #9a9a9a;
+                                font-size: 20px;
+                            }
+
+                            .s01 form .inner-form .input-field input:hover, .s01 form .inner-form .input-field input:focus {
+                                box-shadow: none;
+                                outline: 0;
+                            }
+
+                        .s01 form .inner-form .input-field.first-wrap {
+                            -ms-flex-positive: 1;
+                            flex-grow: 1;
+                        }
+
+                        .s01 form .inner-form .input-field.second-wrap {
+                            width: 32.77%;
+                            min-width: 100px;
+                        }
+
+                        .s01 form .inner-form .input-field.third-wrap {
+                            width: 100px;
+                            margin-right: 0;
+                        }
+
+                            .s01 form .inner-form .input-field.third-wrap .btn-search {
+                                width: 90%;
+                                background: #4272d7;
+                                white-space: nowrap;
+                                /*border-radius: .5px;*/
+                                font-size: 20px;
+                                color: #fff;
+                                transition: all .2s ease-out, color .2s ease-out;
+                                border: 0;
+                                cursor: pointer;
+                            }
+
+                                .s01 form .inner-form .input-field.third-wrap .btn-search:hover {
+                                    background: #2d62d3;
+                                }
+
+        @media screen and (max-width: 992px) {
+            .s01 form .inner-form {
+                padding: 10px 20px 0px 15px;
+            }
+
+                .s01 form .inner-form .input-field {
+                    height: 15px;
+                }
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .s01 form .inner-form {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+                .s01 form .inner-form .input-field {
+                    margin-right: 0;
+                }
+
+                    .s01 form .inner-form .input-field input {
+                        padding: 5px 20px;
+                        font-size: 14px;
+                    }
+
+                    .s01 form .inner-form .input-field.first-wrap {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    .s01 form .inner-form .input-field.third-wrap {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                        .s01 form .inner-form .input-field.third-wrap .btn-search {
+                            font-size: 14px;
+                            height: 15px;
+                        }
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="purple">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    KAP ERFAN & RAKHMAWAN
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./dashboard_1">
+                            <i class="material-icons">dashboard</i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="./profile">
+                            <i class="material-icons">person</i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./knnsmote">
+                            <i class="material-icons">library_books</i>
+                            <p>KNN-SMOTE</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./benford">
+                            <i class="material-icons">content_paste</i>
+                            <p>Benford Law</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top" style="height: 200px;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <form class="navbar-form"></form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">person</i>
+                                    <p class="d-lg-none d-md-block">
+                                        Account
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                                    <a class="dropdown-item" href="./profile">Profile</a>
+                                    <!--<a class="dropdown-item" href="#">Settings</a>-->
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="./logout">Log out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="parallax-window" data-parallax="scroll" style="background-image:url('static/img/head.jpg'); background-size:cover; background-repeat:no-repeat;">
+                <div class="container-fluid">
+                    <section class="row" id="tmHome">
+                        <div class="col-12 tm-home-container">
+                            <div class="text-white tm-bg-white-transparent tm-feature-box">
+                                <h3 class="tm-home-title"><img src="static/img/logo kap.png" />KANTOR AKUNTAN PUBLIK ERFAN & RAKHMAWAN</h3>
+                                <hr class="tm-home-hr">
+                                <p class="tm-home-text">
+                                    Gedung Agnesia Lt. 1 TBS B2, Jl. Pemuda No 73B, Jakarta Timur, DKI Jakarta – 13120<br />
+                                    Telp, 021-4701550 Fax 021-47867927<br />
+                                    Email : info@kap-er.co.id
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Features -->
+                    <center>
+                        <div class="aaa row" style="font-family: 'Verdana', sans-serif;">
+                            <!-- background-image:url('static/img/bbb.jpg'); background-size:cover; background-repeat:no-repeat;"-->
+                            <div class="col-lg-6">
+                                <div class="crd tmbl" onclick="this.classList.toggle('expanded'); klasifikasi();">
+                                    <svg class="label" viewBox="0 0 100 100" height="10" width="10" style="color:black;"><p style="font-size:20px">VISI</p></svg>
+                                    <div class="text1">
+                                        <div class="text-content" style="display:none" id="klasifikasi">
+                                            <div class="dropdown-divider"></div>
+                                            <div class="bd-text">Terwujudnya Kantor Akuntan Publik Erfan & Rakhmawan yang handal, terpercaya, jujur yang mampu mengatasi semua problem klien dengan tetap mengembangkan independensi            </div>
+                                        </div>
+                                    </div>
+                                    <svg class="chevron" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" /></svg>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="crd tmbl " onclick="this.classList.toggle('expanded'); benford();">
+                                    <svg class="label" viewBox="0 0 100 100" height="10" width="10"><p style="font-size:20px">MISI</p></svg>
+                                    <div class="text2">
+                                        <div class="text-content" style="display:none" id="benford">
+                                            <div class="dropdown-divider"></div>
+                                            <div class="bd-text">
+                                                <ul>
+                                                    <li>Menjalankan standar professional akuntan public dengan benar.</li>
+                                                    <li>Menjalankan dan memahami standar PSAK dengan benar.</li>
+                                                    <li>Menjalankan peraturan perundang-undangan yang berlaku.</li>
+                                                    <li>Mengembangkan Pendidikan, pelatihan, dan ilmu pengetahuan.</li>
+                                                    <li>Jujur dan berkomunikasi dengan semua pihak.</li>
+                                                    <li>Melaksanakan keahliannya dengan tepat sesuai profesi.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <svg class="chevron" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" /></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="float-left">
+                        <ul>
+                            <li>
+                                <a href="https://www.creative-tim.com">
+                                    Creative Tim
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://creative-tim.com/presentation">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://blog.creative-tim.com">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.creative-tim.com/license">
+                                    Licenses
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright float-right">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by
+                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="static/js/core/jquery.min.js"></script>
+    <script src="static/js/core/popper.min.js"></script>
+    <script src="static/js/core/bootstrap-material-design.min.js"></script>
+    <script src="static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Plugin for the momentJs  -->
+    <script src="static/js/plugins/moment.min.js"></script>
+    <!--  Plugin for Sweet Alert -->
+    <script src="static/js/plugins/sweetalert2.js"></script>
+    <!-- Forms Validations Plugin -->
+    <script src="static/js/plugins/jquery.validate.min.js"></script>
+    <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+    <script src="static/js/plugins/jquery.bootstrap-wizard.js"></script>
+    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+    <script src="static/js/plugins/bootstrap-selectpicker.js"></script>
+    <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+    <script src="static/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+    <script src="static/js/plugins/jquery.dataTables.min.js"></script>
+    <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+    <script src="static/js/plugins/bootstrap-tagsinput.js"></script>
+    <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="static/js/plugins/jasny-bootstrap.min.js"></script>
+    <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+    <script src="static/js/plugins/fullcalendar.min.js"></script>
+    <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+    <script src="static/js/plugins/jquery-jvectormap.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="static/js/plugins/nouislider.min.js"></script>
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <!-- Library for adding dinamically elements -->
+    <script src="static/js/plugins/arrive.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chartist JS -->
+    <script src="static/js/plugins/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="static/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="static/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="static/demo/demo.js"></script>
+    <script type="text/javascript">
+        function klasifikasi() {
+            var a = document.getElementById('klasifikasi');
+            var b = document.getElementById('benford');
+            if (a.style.display === "none") {
+                a.style.display = 'block';
+            } else {
+                a.style.display = 'none';
+            }
+        }
+        function benford() {
+            var a = document.getElementById('klasifikasi');
+            var b = document.getElementById('benford');
+            if (b.style.display === "none") {
+                b.style.display = 'block';
+            } else {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $().ready(function () {
+                //To hide the table
+                $("#hide-table").click(function () {
+                    $("#card-footer").css("display", "initial")
+                });
+                //To show the table
+                $sidebar = $('.sidebar');
+
+                $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+                $full_page = $('.full-page');
+
+                $sidebar_responsive = $('body > .navbar-collapse');
+
+                window_width = $(window).width();
+
+                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+                if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+                    if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                        $('.fixed-plugin .dropdown').addClass('open');
+                    }
+
+                }
+
+                $('.fixed-plugin a').click(function (event) {
+                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+                    if ($(this).hasClass('switch-trigger')) {
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else if (window.event) {
+                            window.event.cancelBubble = true;
+                        }
+                    }
+                });
+
+                $('.fixed-plugin .active-color span').click(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data-color', new_color);
+                    }
+
+                    if ($full_page.length != 0) {
+                        $full_page.attr('filter-color', new_color);
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.attr('data-color', new_color);
+                    }
+                });
+
+                $('.fixed-plugin .background-color .badge').click(function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('background-color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data-background-color', new_color);
+                    }
+                });
+
+                $('.fixed-plugin .img-holder').click(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $(this).parent('li').siblings().removeClass('active');
+                    $(this).parent('li').addClass('active');
+
+
+                    var new_image = $(this).find("img").attr('src');
+
+                    if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        $sidebar_img_container.fadeOut('fast', function () {
+                            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                            $sidebar_img_container.fadeIn('fast');
+                        });
+                    }
+
+                    if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $full_page_background.fadeOut('fast', function () {
+                            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                            $full_page_background.fadeIn('fast');
+                        });
+                    }
+
+                    if ($('.switch-sidebar-image input:checked').length == 0) {
+                        var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+                    }
+                });
+
+                $('.switch-sidebar-image input').change(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $input = $(this);
+
+                    if ($input.is(':checked')) {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar_img_container.fadeIn('fast');
+                            $sidebar.attr('data-image', '#');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page_background.fadeIn('fast');
+                            $full_page.attr('data-image', '#');
+                        }
+
+                        background_image = true;
+                    } else {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar.removeAttr('data-image');
+                            $sidebar_img_container.fadeOut('fast');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page.removeAttr('data-image', '#');
+                            $full_page_background.fadeOut('fast');
+                        }
+
+                        background_image = false;
+                    }
+                });
+
+                $('.switch-sidebar-mini input').change(function () {
+                    $body = $('body');
+
+                    $input = $(this);
+
+                    if (md.misc.sidebar_mini_active == true) {
+                        $('body').removeClass('sidebar-mini');
+                        md.misc.sidebar_mini_active = false;
+
+                        $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+                    } else {
+
+                        $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+                        setTimeout(function () {
+                            $('body').addClass('sidebar-mini');
+
+                            md.misc.sidebar_mini_active = true;
+                        }, 300);
+                    }
+
+                    // we simulate the window Resize so the charts will get updated in realtime.
+                    var simulateWindowResize = setInterval(function () {
+                        window.dispatchEvent(new Event('resize'));
+                    }, 180);
+
+                    // we stop the simulation of Window Resize after the animations are completed
+                    setTimeout(function () {
+                        clearInterval(simulateWindowResize);
+                    }, 1000);
+
+                });
+            });
+        });</script>
+    <script>
+        $(document).ready(function () {
+            // Javascript method's body can be found in assets/js/demos.js
+            md.initDashboardPageCharts();
+
+        });
+    </script>
+    <script>
+        (function (global) {
+
+            if (typeof (global) === "undefined") {
+                throw new Error("window is undefined");
+            }
+
+            var _hash = "!";
+            var noBackPlease = function () {
+                global.location.href += "#";
+
+                // making sure we have the fruit available for juice (^__^)
+                global.setTimeout(function () {
+                    global.location.href += "!";
+                }, 50);
+            };
+
+            global.onhashchange = function () {
+                if (global.location.hash !== _hash) {
+                    global.location.hash = _hash;
+                }
+            };
+
+            global.onload = function () {
+                noBackPlease();
+
+                // disables backspace on page except on input fields and textarea..
+                document.body.onkeydown = function (e) {
+                    var elm = e.target.nodeName.toLowerCase();
+                    if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
+                        e.preventDefault();
+                    }
+                    // stopping event bubbling up the DOM tree..
+                    e.stopPropagation();
+                };
+            }
+
+        })(window);
+    </script>
+
+</body>
+</html>
